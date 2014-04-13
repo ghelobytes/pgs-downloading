@@ -1,0 +1,8 @@
+<h1>Transaction {{passcode}}</h1>
+<div>
+  {{#each layers}}
+    <div>
+        Download <a href="/download/{{../passcode}}/{{layer}}">{{layer}}</a> {{#if bounds}}limit to {{bounds}} {{/if}}
+    </div>
+  {{/each}}
+</div>
